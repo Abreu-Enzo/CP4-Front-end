@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* display: grid; */
+    /* grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 100vh 100vh; */
+
+    background-color: #121212;
+}
+
+img {
+    border-radius: 0.25rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main {
+
+    div {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        font-weight: lighter;
+    }
+
+    button {
+        width: 8rem;
+        height: 3rem;
+        border-radius: 25%;
+        background-color: gray;
+        border: none;
+        color: #121212;
+        font-weight: bold;
+    }
+}
+
+.a {
+    grid-area: a;
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+}
+
+.d {
+    grid-area: d;
+}
+
+.e {
+    grid-area: e;
+}
+
+.teste {
+    max-width: 1140px;
+    margin: 40px auto;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 400px 200px;
+    gap: 1rem;
+    display: grid;
+
+
+    grid-template-areas:
+        "a a a a"
+        "b c d e";
+}
+
+#banner {
+    /* grid-area: 1/1/3/5; */
+}
+
+
+section {
+    /* grid-area: 2/2; */
+}
