@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -59,22 +60,23 @@ main {
 
 section {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 300px 300px;
+    grid-template-columns: repeat(5, minmax(0, 25%));
+    grid-template-rows: repeat(2, 300px);
+    padding: 5rem;
 
-    max-width: 1140px;
+    width: 100%;
 
-    margin: 40px auto;
+    padding: 40px auto;
     gap: 1rem;
 
     object-fit: cover;
 
 
     grid-template-areas: 
-        "1 2 4 5 7"
-        "3 2 6 5 8"
+        "img-1 img-3 img-4 img-6 img-7"
+        "img-2 img-3 img-5 img-6 img-8"
     ;
+
     width: 100vw;
-    padding: 0 40px;
     background-color: #fffeff;
 }
