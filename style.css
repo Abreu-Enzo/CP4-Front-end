@@ -50,6 +50,13 @@ main {
         font-weight: bold;
     }
 
+    button:hover {
+        border: solid 1px #b4aaa3;
+        background-color: #121212;
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+
     p {
         font-family: Poppins;
         align-self: baseline;
@@ -60,6 +67,8 @@ main {
 
 section {
     display: grid;
+    align-items: center;
+    justify-content: center;
     grid-template-columns: repeat(5, minmax(0, 25%));
     grid-template-rows: repeat(2, 300px);
     padding: 5rem;
@@ -79,7 +88,12 @@ section {
 
     width: 100vw;
     background-color: #fffeff;
+
+    img:hover {
+        transform: scale(1.05);
+    }
 }
+
 @media(max-width: 600px){
     main {
         max-width: 90%;
@@ -107,8 +121,9 @@ section {
         grid-template-areas: 
             "img-1 img-3"
             "img-2 img-3"
-            "img-3 img-1"
-            "img-3 img-2"
+            "img-6 img-4"
+            "img-6 img-5"
+            "img-7 img-8"
         ;
     }
 }
